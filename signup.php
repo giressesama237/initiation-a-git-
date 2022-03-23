@@ -40,7 +40,7 @@ if(isset($
     $query->bindParam(':prenom',$prenom,PDO::PARAM_STR);
     $query->bindParam(':id',$id,PDO::PARAM_STR);
     //etape 3 execution de la requete
-    $result = $query->execute();
+    
 
     
 }
