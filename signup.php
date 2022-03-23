@@ -30,13 +30,7 @@ if(isset($_POST['submit']))
 
 
 
-if(isset($_POST['modifier']))
-{
-    $nom = $_POST['nom'];
-    $matricule = $_POST['matricule'];
-    $prenom = $_POST['prenom'];
-    $id = $_POST['id'];
-    //etape 1 écriture de la requete
+if(isset($
     $sql = "update etudiants set matricule=:matricule,
     nom=:nom,prenom=:prenom where id=:id";
     //etape 2 preparation de la requete
