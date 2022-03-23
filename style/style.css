@@ -1,0 +1,30 @@
+body{
+    background-color: #ddeeff;
+    font-family:"Trebuchet MS", Verdana, Tahoma;
+    height: auto;
+}
+.page{
+    background-color:white;
+    width: 700px;
+    text-align: justify;
+    border-radius: 10px;
+    border:1px solid black;
+    padding: 3em;
+    margin: auto;
+}
+h1{
+    background-color:#069;
+    color:#fff;
+    border-radius: 10px;
+    border:1px solid #005285;
+    margin : 5px;
+    padding: 1em;
+    text-align: right;
+    font-weight: bold;
+    font-variant: small-caps;
+
+}
+.flamme{
+    background-color: red;
+    color:#fff;
+}
