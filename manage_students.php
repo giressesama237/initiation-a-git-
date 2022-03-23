@@ -1,27 +1,8 @@
 <?php
-include('dbconnect.php');
-$sql = "select * from etudiants";
-$query = $dbh->prepare($sql);
-$query->execute();
-$results = $query->fetchAll(PDO::FETCH_OBJ);
-//var_dump($results);
 
 
-if(isset($_GET['delid']))
-{
-  $id=intval($_GET['delid']);
-  $sql = "delete from etudiants where id =:id";
-  $query = $dbh->prepare($sql);
-  $query->bindParam(':id',$id,PDO::PARAM_STR);
-  $result = $query->execute();
-  if ($result)
-  {
-    echo "<script>alert('Etudiant Supprimé');</script>";
-    echo "<script>window.location.href= 'manage_students.php'</script>";
-  }else{
-    echo "<script>alert('Erreur');</script>";
-  }
-}
+
+
 
 ?>
 

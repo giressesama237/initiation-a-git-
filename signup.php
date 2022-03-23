@@ -48,11 +48,5 @@ if(isset($_POST['modifier']))
     //etape 3 execution de la requete
     $result = $query->execute();
 
-    if ($result)
-  {
-    echo "<script>alert('Etudiant modifié');</script>";
-    echo "<script>window.location.href= 'manage_students.php'</script>";
-  }else{
-    echo "<script>alert('Erreur');</script>";
-  }
+    
 }
